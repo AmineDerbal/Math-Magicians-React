@@ -6,7 +6,7 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [result, setResult] = useState(0);
   const handleClick = (e) => {
-    setResult((prevState) => calculate(prevState, e.target.innerText));
+    setResult((obj) => calculate(obj, e.target.innerText));
   };
   return (
     <div id="calculator-body">
