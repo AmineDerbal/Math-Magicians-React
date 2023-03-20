@@ -31,6 +31,7 @@
 # Math Magicians Project📖 <a name="about-project"></a>
 
 **Math Magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+
 - Make simple calculations.
 - Read a random math-related quote.
 
@@ -70,7 +71,6 @@ This project is Built using React front end framework
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
 
 1.install git, if you already have git installed skip this step.
 
@@ -112,6 +112,10 @@ to build this project from the source folder using webpack
 ### npm run start
 
 in order to start a server and deploy the project localy
+
+### Run tests
+
+In order to run the tests, use the following command : <code> npm run test </code>
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
