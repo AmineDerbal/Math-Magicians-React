@@ -57,8 +57,6 @@ This project is Built using React front end framework
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **React front end framwork**
 - **Git-flow**
 - **Es6 module**
@@ -67,15 +65,12 @@ This project is Built using React front end framework
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - will be addedd soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> To get a local copy up and running, follow these steps.
 
 1.install git, if you already have git installed skip this step.
 
