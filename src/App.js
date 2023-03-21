@@ -1,5 +1,11 @@
 import Calculator from './components/Calculator';
+import Api from './components/Api';
 
-const App = () => <Calculator />;
+const App = () => (
+  <div>
+    <Calculator />
+    <Api />
+  </div>
+);
 
 export default App;
