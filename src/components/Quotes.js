@@ -4,7 +4,7 @@ import apiKey from './apiKey';
 import Loader from './loader';
 import './style/Api.css';
 
-const Api = () => {
+const Quotes = () => {
   const [data, setData] = useState([]);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -48,4 +48,4 @@ const Api = () => {
   );
 };
 
-export default Api;
+export default Quotes;
