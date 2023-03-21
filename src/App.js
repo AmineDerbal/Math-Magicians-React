@@ -1,10 +1,10 @@
 import Calculator from './components/Calculator';
-import Api from './components/Api';
+import Quotes from './components/Quotes';
 
 const App = () => (
   <div>
     <Calculator />
-    <Api />
+    <Quotes />
   </div>
 );
 
