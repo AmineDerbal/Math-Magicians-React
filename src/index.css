@@ -1,4 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #363732;
+  color: #dce1e9;
   margin: 0;
   font-family:
     -apple-system,
@@ -18,4 +24,55 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #dce1e9;
+  font-size: 1.5rem;
+}
+
+header nav a:hover {
+  color: #53d8fb;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.home {
+  padding: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+}
+
+.calculator-page h2 {
+  text-align: center;
+}
+
+.error-page {
+  padding: 3rem;
+  text-align: center;
+}
+
+.error-page h2 {
+  font-size: 3rem;
 }

@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import apiKey from './apiKey';
-import Loader from './loader';
-import './style/Api.css';
+import apiKey from '../components/apiKey';
+import Loader from '../components/loader';
+import '../styles/Api.css';
 
 const Quotes = () => {
   const [data, setData] = useState([]);
@@ -39,11 +39,12 @@ const Quotes = () => {
     <div className="quotes-data">
       <p>
         <strong>{data.quote}</strong>
+        {' '}
+        <span>
+          ~
+          {data.author}
+        </span>
       </p>
-      <span>
-        by
-        {data.author}
-      </span>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style/Calculator.css';
+import '../styles/Calculator.css';
 import BottomValue from './BottomValue';
 import calculate from '../logic/calculate';
 
