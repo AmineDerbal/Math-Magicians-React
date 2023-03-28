@@ -1,76 +1,44 @@
 import React, { useState } from 'react';
 import '../styles/Calculator.css';
-import BottomValue from './BottomValue';
+import Screen from './Screen';
+import Button from './Button';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [result, setResult] = useState(0);
+  const buttons = [
+    { value: 'AC', class: null, id: null },
+    { value: '+/-', class: null, id: null },
+    { value: '%', class: null, id: null },
+    { value: '÷', class: 'orange-button', id: null },
+    { value: '7', class: null, id: null },
+    { value: '8', class: null, id: null },
+    { value: '9', class: null, id: null },
+    { value: 'x', class: 'orange-button', id: null },
+    { value: '4', class: null, id: null },
+    { value: '5', class: null, id: null },
+    { value: '6', class: null, id: null },
+    { value: '-', class: 'orange-button', id: null },
+    { value: '1', class: null, id: null },
+    { value: '2', class: null, id: null },
+    { value: '3', class: null, id: null },
+    { value: '+', class: 'orange-button', id: null },
+    { value: '0', class: null, id: 'zero' },
+    { value: '.', class: null, id: null },
+    { value: '=', class: 'orange-button', id: null },
+  ];
   const handleClick = (e) => {
     setResult((obj) => calculate(obj, e.target.innerText));
   };
   return (
     <div id="calculator-body">
       <div id="calculator-screen">
-        <BottomValue result={result.next || result.total || '0'} />
+        <Screen result={result.next || result.total || '0'} />
       </div>
       <div id="calculator-buttons">
-        <button onClick={handleClick} type="button">
-          AC
-        </button>
-        <button onClick={handleClick} type="button">
-          +/-
-        </button>
-        <button onClick={handleClick} type="button">
-          %
-        </button>
-        <button onClick={handleClick} type="button" className="orange-button">
-          ÷
-        </button>
-        <button onClick={handleClick} type="button">
-          7
-        </button>
-        <button onClick={handleClick} type="button">
-          8
-        </button>
-        <button onClick={handleClick} type="button">
-          9
-        </button>
-        <button onClick={handleClick} type="button" className="orange-button">
-          x
-        </button>
-        <button onClick={handleClick} type="button">
-          4
-        </button>
-        <button onClick={handleClick} type="button">
-          5
-        </button>
-        <button onClick={handleClick} type="button">
-          6
-        </button>
-        <button onClick={handleClick} type="button" className="orange-button">
-          -
-        </button>
-        <button onClick={handleClick} type="button">
-          1
-        </button>
-        <button onClick={handleClick} type="button">
-          2
-        </button>
-        <button onClick={handleClick} type="button">
-          3
-        </button>
-        <button onClick={handleClick} type="button" className="orange-button">
-          +
-        </button>
-        <button onClick={handleClick} type="button" id="zero">
-          0
-        </button>
-        <button onClick={handleClick} type="button">
-          .
-        </button>
-        <button onClick={handleClick} type="button" className="orange-button">
-          =
-        </button>
+        {buttons.map((button) => (
+          <Button key={button.value} button={button} handleClick={handleClick} />
+        ))}
       </div>
     </div>
   );
