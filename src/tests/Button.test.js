@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Button from '../components/Button';
 
 it('test button render', () => {
@@ -7,6 +8,7 @@ it('test button render', () => {
     class: 'orange-button',
     id: null,
   };
+  const tree = renderer.create(<Button button={obj} handleClick={() => {}} />).toJSON();
 
   render(<Button button={obj} handleClick={() => {}} />);
   const button = screen.getByRole('button');
@@ -14,4 +16,5 @@ it('test button render', () => {
 
   expect(button.className).toBe(obj.class);
   expect(button.id).toBeFalsy();
+  expect(tree).toMatchSnapshot();
 });
