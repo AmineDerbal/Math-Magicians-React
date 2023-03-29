@@ -38,7 +38,12 @@ const Quotes = () => {
   return (
     <div className="quotes-data">
       <p>
-        <strong>{data.quote}</strong> <span>~{data.author} </span>
+        <strong>{data.quote}</strong>
+        {' '}
+        <span>
+          ~
+          {data.author}
+        </span>
       </p>
     </div>
   );
