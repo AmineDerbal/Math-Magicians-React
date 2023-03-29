@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import apiKey from '../components/apiKey';
+import apiKey from '../util/apiKey';
 import Loader from '../components/loader';
 import '../styles/Api.css';
 
