@@ -66,7 +66,7 @@ This project is Built using React front end framework
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- will be addedd soon
+- [Live demo link](https://math-magician-zppr.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
