@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import apiKey from '../util/apiKey';
+// import apiKey from '../util/apiKey';
 import Loader from '../components/loader';
 import '../styles/Api.css';
 
@@ -15,7 +15,7 @@ const Quotes = () => {
       try {
         const dataJson = await axios('https://api.api-ninjas.com/v1/quotes?category=computers', {
           headers: {
-            'x-api-key': apiKey,
+            'x-api-key': process.env.REACT_APP_QUOTE_API_KEY,
           },
         });
         const response = await dataJson.data;
